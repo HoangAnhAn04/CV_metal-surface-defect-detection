@@ -1,0 +1,69 @@
+
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# ==============================
+# Jupyter Notebook
+# ==============================
+.ipynb_checkpoints/
+
+# ==============================
+# IDE
+# ==============================
+.vscode/
+.idea/
+
+# ==============================
+# Environment variables
+# ==============================
+.env
+.env.*
+!.env.example
+
+# ==============================
+# Datasets - NEU Surface Defect
+# ==============================
+data/
+dataset/
+datasets/
+*.zip
+
+# ==============================
+# Model weights and checkpoints
+# ==============================
+*.pt
+*.pth
+*.onnx
+*.h5
+*.weights
+checkpoints/
+weights/
+
+# ==============================
+# Training outputs
+# ==============================
+runs/
+outputs/
+logs/
+wandb/
+
+# ==============================
+# OS
+# ==============================
+.DS_Store
+Thumbs.db
+desktop.ini

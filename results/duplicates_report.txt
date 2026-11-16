@@ -1,0 +1,5 @@
+TRUNG Y HET
+data\NEU-DET\train\images\patches\patches_101.jpg | data\NEU-DET\train\images\patches\patches_105.jpg
+
+GAN GIONG
+0: data\NEU-DET\train\images\patches\patches_101.jpg <-> data\NEU-DET\train\images\patches\patches_105.jpg

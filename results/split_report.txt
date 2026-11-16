@@ -1,0 +1,13 @@
+Tong anh goc: 1800
+Loai anh trung: data\NEU-DET\train\images\patches\patches_105.jpg (giong data\NEU-DET\train\images\patches\patches_101.jpg)
+Sau khi loai trung: 1799
+
+lop                 train    val   test   tong
+crazing               210     45     45    300
+inclusion             210     45     45    300
+patches               209     45     45    299
+pitted_surface        210     45     45    300
+rolled-in_scale       210     45     45    300
+scratches             210     45     45    300
+TONG                 1259    270    270   1799
+Seed: 223332813
