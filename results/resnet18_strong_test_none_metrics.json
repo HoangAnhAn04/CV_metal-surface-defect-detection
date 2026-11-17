@@ -1,0 +1,14 @@
+{
+  "model": "resnet18_strong",
+  "split": "test",
+  "perturb": "none",
+  "n": 270,
+  "correct": 270,
+  "accuracy": 1.0,
+  "ci95_low": 0.9859714521095407,
+  "ci95_high": 1.0,
+  "macro_precision": 1.0,
+  "macro_recall": 1.0,
+  "macro_f1": 1.0,
+  "wrong": 0
+}

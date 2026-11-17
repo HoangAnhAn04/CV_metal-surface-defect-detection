@@ -1,0 +1,23 @@
+Mo hinh: cnn_baseline | tap: test | bien doi: none
+Dung 267/270 | acc 0.9889 | CI95 [0.9678, 0.9962]
+
+                 precision    recall  f1-score   support
+
+        crazing     0.9783    1.0000    0.9890        45
+      inclusion     0.9574    1.0000    0.9783        45
+        patches     1.0000    0.9778    0.9888        45
+ pitted_surface     1.0000    0.9556    0.9773        45
+rolled-in_scale     1.0000    1.0000    1.0000        45
+      scratches     1.0000    1.0000    1.0000        45
+
+       accuracy                         0.9889       270
+      macro avg     0.9893    0.9889    0.9889       270
+   weighted avg     0.9893    0.9889    0.9889       270
+
+Confusion matrix:
+[[45  0  0  0  0  0]
+ [ 0 45  0  0  0  0]
+ [ 1  0 44  0  0  0]
+ [ 0  2  0 43  0  0]
+ [ 0  0  0  0 45  0]
+ [ 0  0  0  0  0 45]]

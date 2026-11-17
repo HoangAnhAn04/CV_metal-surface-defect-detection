@@ -52,8 +52,22 @@ class SurfaceDataset(Dataset):
         return self.transform(img), label
 
 
+class RandomGaussianNoise:
+    def __init__(self, max_std=0.15, p=0.4):
+        self.max_std = max_std
+        self.p = p
+
+    def __call__(self, x):
+        if random.random() < self.p:
+            std = random.uniform(0.02, self.max_std)
+            noise = torch.randn(1, x.shape[1], x.shape[2]) * std
+            x = (x + noise).clamp(0, 1)
+        return x
+
+
 def build_transforms(img_size, aug):
     train_ops = [transforms.Resize((img_size, img_size))]
+    after_tensor = []
     if aug == "basic":
         train_ops += [
             transforms.RandomHorizontalFlip(),
@@ -61,9 +75,23 @@ def build_transforms(img_size, aug):
             transforms.RandomAffine(degrees=10, translate=(0.05, 0.05)),
             transforms.ColorJitter(brightness=0.2, contrast=0.2),
         ]
-    tail = [transforms.ToTensor(), transforms.Normalize(MEAN, STD)]
-    eval_ops = [transforms.Resize((img_size, img_size))] + tail
-    return transforms.Compose(train_ops + tail), transforms.Compose(eval_ops)
+    elif aug == "strong":
+        train_ops += [
+            transforms.RandomHorizontalFlip(),
+            transforms.RandomVerticalFlip(),
+            transforms.RandomAffine(degrees=10, translate=(0.05, 0.05)),
+            transforms.RandomPerspective(distortion_scale=0.2, p=0.3),
+            transforms.ColorJitter(brightness=0.5, contrast=0.5),
+            transforms.RandomApply([transforms.GaussianBlur(5, sigma=(0.1, 2.5))], p=0.4),
+        ]
+        after_tensor = [RandomGaussianNoise(0.15, 0.4)]
+    train_tf = transforms.Compose(
+        train_ops + [transforms.ToTensor()] + after_tensor + [transforms.Normalize(MEAN, STD)]
+    )
+    eval_tf = transforms.Compose(
+        [transforms.Resize((img_size, img_size)), transforms.ToTensor(), transforms.Normalize(MEAN, STD)]
+    )
+    return train_tf, eval_tf
 
 
 class SimpleCNN(nn.Module):

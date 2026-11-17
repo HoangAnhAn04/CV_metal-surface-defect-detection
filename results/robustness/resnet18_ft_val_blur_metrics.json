@@ -1,0 +1,14 @@
+{
+  "model": "resnet18_ft",
+  "split": "val",
+  "perturb": "blur",
+  "n": 270,
+  "correct": 173,
+  "accuracy": 0.6407407407407407,
+  "ci95_low": 0.5819054844230047,
+  "ci95_high": 0.6956272206152363,
+  "macro_precision": 0.5347117794486215,
+  "macro_recall": 0.6407407407407407,
+  "macro_f1": 0.5623465584287582,
+  "wrong": 97
+}

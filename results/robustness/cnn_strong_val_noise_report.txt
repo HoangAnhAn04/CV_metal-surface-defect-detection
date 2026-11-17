@@ -1,0 +1,23 @@
+Mo hinh: cnn_strong | tap: val | bien doi: noise
+Dung 250/270 | acc 0.9259 | CI95 [0.8884, 0.9515]
+
+                 precision    recall  f1-score   support
+
+        crazing     0.9574    1.0000    0.9783        45
+      inclusion     0.8039    0.9111    0.8542        45
+        patches     1.0000    0.9778    0.9888        45
+ pitted_surface     0.9211    0.7778    0.8434        45
+rolled-in_scale     0.9000    1.0000    0.9474        45
+      scratches     1.0000    0.8889    0.9412        45
+
+       accuracy                         0.9259       270
+      macro avg     0.9304    0.9259    0.9255       270
+   weighted avg     0.9304    0.9259    0.9255       270
+
+Confusion matrix:
+[[45  0  0  0  0  0]
+ [ 0 41  0  3  1  0]
+ [ 1  0 44  0  0  0]
+ [ 1  5  0 35  4  0]
+ [ 0  0  0  0 45  0]
+ [ 0  5  0  0  0 40]]

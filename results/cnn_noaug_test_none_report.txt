@@ -1,0 +1,23 @@
+Mo hinh: cnn_noaug | tap: test | bien doi: none
+Dung 265/270 | acc 0.9815 | CI95 [0.9574, 0.9921]
+
+                 precision    recall  f1-score   support
+
+        crazing     1.0000    1.0000    1.0000        45
+      inclusion     0.9000    1.0000    0.9474        45
+        patches     1.0000    1.0000    1.0000        45
+ pitted_surface     1.0000    0.8889    0.9412        45
+rolled-in_scale     1.0000    1.0000    1.0000        45
+      scratches     1.0000    1.0000    1.0000        45
+
+       accuracy                         0.9815       270
+      macro avg     0.9833    0.9815    0.9814       270
+   weighted avg     0.9833    0.9815    0.9814       270
+
+Confusion matrix:
+[[45  0  0  0  0  0]
+ [ 0 45  0  0  0  0]
+ [ 0  0 45  0  0  0]
+ [ 0  5  0 40  0  0]
+ [ 0  0  0  0 45  0]
+ [ 0  0  0  0  0 45]]

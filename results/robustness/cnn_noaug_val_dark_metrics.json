@@ -1,0 +1,14 @@
+{
+  "model": "cnn_noaug",
+  "split": "val",
+  "perturb": "dark",
+  "n": 270,
+  "correct": 198,
+  "accuracy": 0.7333333333333333,
+  "ci95_low": 0.6775807224225056,
+  "ci95_high": 0.7825392885619467,
+  "macro_precision": 0.7729849099929496,
+  "macro_recall": 0.7333333333333333,
+  "macro_f1": 0.7227202850370006,
+  "wrong": 72
+}

@@ -34,7 +34,7 @@ def parse_args():
     p.add_argument("--lr", type=float, default=1e-3)
     p.add_argument("--wd", type=float, default=1e-4)
     p.add_argument("--img-size", type=int, default=200)
-    p.add_argument("--aug", choices=["none", "basic"], default="basic")
+    p.add_argument("--aug", choices=["none", "basic", "strong"], default="basic")
     p.add_argument("--pretrained", action="store_true")
     p.add_argument("--freeze", action="store_true")
     p.add_argument("--dropout", type=float, default=0.3)

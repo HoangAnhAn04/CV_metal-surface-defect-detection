@@ -1,0 +1,23 @@
+Mo hinh: cnn_baseline | tap: val | bien doi: dark
+Dung 216/270 | acc 0.8000 | CI95 [0.7482, 0.8434]
+
+                 precision    recall  f1-score   support
+
+        crazing     0.9500    0.8444    0.8941        45
+      inclusion     0.8750    0.4667    0.6087        45
+        patches     0.9149    0.9556    0.9348        45
+ pitted_surface     0.5443    0.9556    0.6935        45
+rolled-in_scale     1.0000    0.6667    0.8000        45
+      scratches     0.8200    0.9111    0.8632        45
+
+       accuracy                         0.8000       270
+      macro avg     0.8507    0.8000    0.7991       270
+   weighted avg     0.8507    0.8000    0.7991       270
+
+Confusion matrix:
+[[38  0  4  3  0  0]
+ [ 0 21  0 15  0  9]
+ [ 2  0 43  0  0  0]
+ [ 0  2  0 43  0  0]
+ [ 0  0  0 15 30  0]
+ [ 0  1  0  3  0 41]]

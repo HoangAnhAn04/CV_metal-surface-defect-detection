@@ -1,0 +1,23 @@
+Mo hinh: resnet18_ft | tap: val | bien doi: none
+Dung 270/270 | acc 1.0000 | CI95 [0.9860, 1.0000]
+
+                 precision    recall  f1-score   support
+
+        crazing     1.0000    1.0000    1.0000        45
+      inclusion     1.0000    1.0000    1.0000        45
+        patches     1.0000    1.0000    1.0000        45
+ pitted_surface     1.0000    1.0000    1.0000        45
+rolled-in_scale     1.0000    1.0000    1.0000        45
+      scratches     1.0000    1.0000    1.0000        45
+
+       accuracy                         1.0000       270
+      macro avg     1.0000    1.0000    1.0000       270
+   weighted avg     1.0000    1.0000    1.0000       270
+
+Confusion matrix:
+[[45  0  0  0  0  0]
+ [ 0 45  0  0  0  0]
+ [ 0  0 45  0  0  0]
+ [ 0  0  0 45  0  0]
+ [ 0  0  0  0 45  0]
+ [ 0  0  0  0  0 45]]

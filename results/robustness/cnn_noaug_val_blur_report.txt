@@ -1,0 +1,23 @@
+Mo hinh: cnn_noaug | tap: val | bien doi: blur
+Dung 79/270 | acc 0.2926 | CI95 [0.2415, 0.3495]
+
+                 precision    recall  f1-score   support
+
+        crazing     0.0000    0.0000    0.0000        45
+      inclusion     0.2761    1.0000    0.4327        45
+        patches     0.0000    0.0000    0.0000        45
+ pitted_surface     0.0357    0.0222    0.0274        45
+rolled-in_scale     0.0000    0.0000    0.0000        45
+      scratches     0.4177    0.7333    0.5323        45
+
+       accuracy                         0.2926       270
+      macro avg     0.1216    0.2926    0.1654       270
+   weighted avg     0.1216    0.2926    0.1654       270
+
+Confusion matrix:
+[[ 0 17  0 27  0  1]
+ [ 0 45  0  0  0  0]
+ [ 0  0  0  0  0 45]
+ [ 0 44  0  1  0  0]
+ [ 0 45  0  0  0  0]
+ [ 0 12  0  0  0 33]]
