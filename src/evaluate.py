@@ -20,7 +20,7 @@ PERTURBATIONS = ["none", "blur", "noise", "dark", "bright", "lowcontrast"]
 def parse_args():
     p = argparse.ArgumentParser()
     p.add_argument("--models", nargs="+", required=True)
-    p.add_argument("--split", choices=["val", "test"], default="test")
+    p.add_argument("--split", choices=["val", "test", "webcam"], default="test")
     p.add_argument("--perturb", choices=PERTURBATIONS, default="none")
     p.add_argument("--batch", type=int, default=32)
     return p.parse_args()

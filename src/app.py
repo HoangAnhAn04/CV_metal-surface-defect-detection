@@ -37,8 +37,9 @@ class App:
         self.last_time = time.time()
         self.fps = 0.0
         self.build_ui(default)
+        root.bind("<F2>", lambda e: self.save_roi())        
         root.protocol("WM_DELETE_WINDOW", self.close)
-
+    
     def build_ui(self, default):
         bar1 = ttk.Frame(self.root, padding=6)
         bar1.pack(fill="x")
