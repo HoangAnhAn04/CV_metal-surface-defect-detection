@@ -1,0 +1,14 @@
+{
+  "model": "resnet18_ft",
+  "split": "webcam",
+  "perturb": "none",
+  "n": 120,
+  "correct": 53,
+  "accuracy": 0.44166666666666665,
+  "ci95_low": 0.35599597315955417,
+  "ci95_high": 0.530956391796971,
+  "macro_precision": 0.4472327441077441,
+  "macro_recall": 0.44166666666666665,
+  "macro_f1": 0.38557833218567367,
+  "wrong": 67
+}

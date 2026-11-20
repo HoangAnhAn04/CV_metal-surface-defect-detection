@@ -1,0 +1,23 @@
+Mo hinh: resnet18_ft | tap: webcam | bien doi: none
+Dung 53/120 | acc 0.4417 | CI95 [0.3560, 0.5310]
+
+                 precision    recall  f1-score   support
+
+        crazing     0.0000    0.0000    0.0000        20
+      inclusion     0.5556    1.0000    0.7143        20
+        patches     1.0000    0.4500    0.6207        20
+ pitted_surface     0.2188    0.7000    0.3333        20
+rolled-in_scale     0.0000    0.0000    0.0000        20
+      scratches     0.9091    0.5000    0.6452        20
+
+       accuracy                         0.4417       120
+      macro avg     0.4472    0.4417    0.3856       120
+   weighted avg     0.4472    0.4417    0.3856       120
+
+Confusion matrix:
+[[ 0  0  0 20  0  0]
+ [ 0 20  0  0  0  0]
+ [ 0  0  9 11  0  0]
+ [ 0  6  0 14  0  0]
+ [ 0  0  0 19  0  1]
+ [ 0 10  0  0  0 10]]

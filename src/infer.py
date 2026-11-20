@@ -90,7 +90,7 @@ def parse_args():
     p = argparse.ArgumentParser()
     p.add_argument("--source", required=True)
     p.add_argument("--model", default="resnet18_strong")
-    p.add_argument("--threshold", type=float, default=0.7)
+    p.add_argument("--threshold", type=float, default=0.9)
     p.add_argument("--out", default=str(RESULTS / "predictions"))
     p.add_argument("--show", action="store_true")
     return p.parse_args()

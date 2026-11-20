@@ -23,7 +23,7 @@ def to_photo(bgr):
 class App:
     def __init__(self, root):
         self.root = root
-        root.title("Phân loại lỗi bề mặt kim loại - NEU")
+        root.title("Phân loại lỗi bề mặt kim loại - 223332813 - An Hoàng Anh")
         self.models = sorted(p.stem for p in MODELS.glob("*.pt"))
         default = "resnet18_strong" if "resnet18_strong" in self.models else self.models[0]
         self.clf = Classifier(default)
@@ -61,11 +61,11 @@ class App:
         box.pack(side="left", padx=4)
         box.bind("<<ComboboxSelected>>", self.change_model)
         ttk.Label(bar2, text="Ngưỡng:").pack(side="left", padx=(12, 0))
-        self.thr_var = tk.DoubleVar(value=0.7)
+        self.thr_var = tk.DoubleVar(value=0.9)
         ttk.Scale(
             bar2, from_=0.3, to=0.99, variable=self.thr_var, length=140, command=self.on_threshold
         ).pack(side="left", padx=4)
-        self.thr_text = ttk.Label(bar2, text="0.70", width=5)
+        self.thr_text = ttk.Label(bar2, text="0.90", width=5)
         self.thr_text.pack(side="left")
         ttk.Label(bar2, text="Nhãn thật:").pack(side="left", padx=(12, 0))
         self.label_var = tk.StringVar()

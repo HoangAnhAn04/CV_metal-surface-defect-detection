@@ -1,0 +1,14 @@
+{
+  "model": "cnn_baseline",
+  "split": "webcam",
+  "perturb": "none",
+  "n": 120,
+  "correct": 30,
+  "accuracy": 0.25,
+  "ci95_low": 0.1810971138452223,
+  "ci95_high": 0.3344130216827425,
+  "macro_precision": 0.1283575002480475,
+  "macro_recall": 0.25,
+  "macro_f1": 0.1619810662044864,
+  "wrong": 90
+}
