@@ -1,0 +1,6 @@
+﻿Mô hình,Ảnh gốc,Làm mờ,Nhiễu,Tối,Sáng,Tương phản thấp
+CNN (augmentation cơ bản),99.63,29.63,16.67,80.0,62.96,35.19
+CNN (không augmentation),100.0,29.26,16.67,73.33,57.78,29.63
+CNN (augmentation mạnh),96.3,72.22,92.59,75.93,69.63,48.89
+ResNet18 (augmentation cơ bản),100.0,64.07,57.78,96.67,79.63,94.44
+ResNet18 (augmentation mạnh),100.0,98.52,98.52,100.0,96.3,98.52

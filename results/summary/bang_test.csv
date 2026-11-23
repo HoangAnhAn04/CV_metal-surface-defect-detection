@@ -1,0 +1,6 @@
+﻿Mô hình,Đúng,Tổng,Accuracy (%),CI95 dưới (%),CI95 trên (%),Macro F1 (%),Sai
+CNN (augmentation cơ bản),267,270,98.89,96.78,99.62,98.89,3
+CNN (không augmentation),265,270,98.15,95.74,99.21,98.14,5
+CNN (augmentation mạnh),258,270,95.56,92.39,97.44,95.54,12
+ResNet18 (augmentation cơ bản),270,270,100.0,98.6,100.0,100.0,0
+ResNet18 (augmentation mạnh),270,270,100.0,98.6,100.0,100.0,0
